@@ -1,0 +1,193 @@
+.mainBlog{
+    width: 95%;
+    height: auto;
+    border-top: 1px solid #f2b830;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+    font-size: 18px;
+    section{
+        h2{
+            margin-left: $rem;
+            margin-bottom: $rem*2;
+            font-family: 'Amaranth', sans-serif;
+            color: $amarillo;
+            font-weight: bolder;
+            font-size: 2rem;
+            text-align: left;
+        }
+        p{
+            margin-bottom: 10px;
+            em{
+                font-weight: bolder;
+                color: #129399;
+            }
+        }
+        article{
+            .avena{
+                display: flex;
+            }
+            .huevos{
+                display: flex;
+            }
+            .lentejas{
+                display: flex;
+            }
+        }
+    }
+}
+.imgBlog{
+    width: 25%;
+}
+
+.composicion{
+    width: 25%;
+    margin-left:2%;
+}
+.beneficios{
+    width: 25%;
+    margin-left: 2%;
+}
+.usos{
+    width: 25%;
+    margin-left: 2%;
+}
+h4{
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: $marron;
+}
+
+@media only screen and (max-width: 1020px){
+    .mainBlog{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: 1rem;
+        section{
+            h2{
+                margin-bottom: .5rem;
+            }
+            p{
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .imgBlog{
+        width: 28%;
+    }
+    
+    .composicion{
+        width: 24%;
+        margin-left:1%;
+    }
+    .beneficios{
+        width: 24%;
+        margin-left: 1%;
+    }
+    .usos{
+        width: 24%;
+        margin-left: 1%;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mainBlog{
+        width: 98%;
+        margin-left: 1%;
+        margin-right: 1%;
+        font-size: .8rem;
+        section{
+            h2{
+                margin-bottom: 0;
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 0;
+            }
+            p{
+                margin-bottom: .5rem;
+            }
+            article{
+                .avena{
+                    justify-content: space-evenly;
+                }
+                .huevos{
+                    justify-content: space-evenly;
+                }
+                .lentejas{
+                    justify-content: space-evenly;
+                }
+            }
+        }
+        h4{
+            font-size: 1rem;
+        }
+    }
+    .imgBlog{
+        width: 31%;
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px){
+    .mainBlog{
+        font-size: .8rem;
+        section{
+            h2{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            article{
+                .avena{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .huevos{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .lentejas{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .imgBlog{
+        display: inherit;
+        height: 17rem;
+        width: auto;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    .composicion{
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    .beneficios{
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+    .usos{
+        width: 100%;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 380px){
+    .imgBlog{
+        display: inherit;
+        height: 14rem;
+        width: auto;
+        padding: 1rem;
+        padding-bottom: 0;
+    }
+}
+

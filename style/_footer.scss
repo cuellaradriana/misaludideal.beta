@@ -1,0 +1,131 @@
+footer{
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    background-color: #dbfff9;
+    .formFooter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 18px;
+        #suscripcion{
+            width: 230px;
+            height: 28px;
+            border-radius: 0px;
+            border: 1px solid #9c5513;
+            margin: 5px;
+            font-size: 16px;
+            font-family: 'Nunito', sans-serif;
+        }
+        #enviarFooter{
+            width: 235px;
+            height: 28px;
+            border-radius: 10px;
+            border: 2px solid #f2b830;
+            background-color: #f2b830;
+            font-family: 'Nunito', sans-serif;
+            color: #fff;
+            font-weight: bolder;
+            font-size: 16px;
+        }
+        #enviarFooter:hover{
+            background-color: #129399;
+            border: 2px solid #129399;
+        }
+    }
+    .redes{
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        a{
+            margin: 10px;
+            padding: 5px;
+            text-decoration: none;
+            color: #f2b830;
+            font-size: 30px;
+        }
+        a:hover{
+            color: #129399;
+        }
+    }
+}
+
+@media only screen and (max-width: 1020px){
+    footer{
+        height: 12.5rem;
+        padding-top: $rem;
+        .formFooter{
+            font-size: $rem;
+            #suscripcion{
+                width: 14rem;
+                height: 1.75rem;
+                margin: .3rem;
+                font-size: $rem;
+                margin-bottom: .5rem;
+            }
+            #enviarFooter{
+                width: 14.2rem;
+                height: 1.75rem;
+                border-radius: 10px;
+                font-size: $rem;
+            }
+        }
+        .redes{
+            padding: 0;
+            margin-top: 1.6rem;
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    footer{
+        height: 10rem;
+        padding-top: $rem;
+        .formFooter{
+            font-size: .8rem;
+            #suscripcion{
+                width: 12rem;
+                height: 1.5rem;
+                margin: .3rem;
+                font-size: .8rem;
+                margin-bottom: .5rem;
+            }
+            #enviarFooter{
+                width: 12.2rem;
+                height: 1.5rem;
+                border-radius: 10px;
+                font-size: .8rem;
+            }
+        }
+        .redes{
+            padding: 0;
+            margin-top: 1.2rem;
+            a{
+                font-size: $rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    footer{
+        height: 9.2rem;
+        .formFooter{
+            font-size: .8rem;
+            #suscripcion{
+                width: 10rem;
+                margin-bottom: .3rem;
+            }
+            #enviarFooter{
+                width: 10rem;
+
+            }
+        }
+        .redes{
+            padding: 0;
+            margin-top: .8rem;
+            a{
+                font-size: .8rem;
+            }
+        }
+    }
+}

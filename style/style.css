@@ -1,0 +1,1157 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amaranth&family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif !important;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 2rem 1rem 2rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  height: 8rem;
+  margin-left: 3rem;
+  padding: 1rem;
+  border: 0.3rem solid #129399;
+  border-radius: 100px;
+}
+
+header .tituloPrincipal {
+  padding-bottom: 1rem;
+  color: #129399;
+  text-shadow: 0.1rem 0.1rem 0.1rem #0f2e30;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 3rem;
+  font-weight: bolder;
+  -webkit-animation-name: titleanimation;
+          animation-name: titleanimation;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes titleanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes titleanimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+header #tituloIndex {
+  font-size: 4rem;
+}
+
+header nav .menuNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav .menuNav .navItem a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+header nav .menuNav .focusNav a {
+  color: #f2b830;
+}
+
+header nav .menuNav .navItem a:hover {
+  border-radius: 1rem;
+  background-color: #f2b830;
+  opacity: 0.8;
+  color: #9c5513;
+}
+
+@media only screen and (max-width: 1020px) {
+  header {
+    padding: 1rem;
+  }
+  header .logo {
+    height: 6rem;
+    margin-left: 1rem;
+    padding: .4rem;
+    border: 0.2rem solid #129399;
+  }
+  header .tituloPrincipal {
+    padding-bottom: .5rem;
+    font-size: 2rem;
+  }
+  header #tituloIndex {
+    font-size: 3rem;
+  }
+  header nav .menuNav .navItem a {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  header nav .menuNav .navItem a:hover {
+    border-radius: .5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: 1rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .logo {
+    height: 6rem;
+    margin-left: 0rem;
+    padding: .4rem;
+    border: 0.2rem solid #129399;
+  }
+  header .tituloPrincipal {
+    padding-bottom: 0rem;
+    font-size: 2.3rem;
+  }
+  header #tituloIndex {
+    font-size: 3rem;
+  }
+  header nav .menuNav .navItem a {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  header nav .menuNav .navItem a:hover {
+    border-radius: .5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  header {
+    padding: 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  header .logo {
+    height: 7rem;
+    margin-left: 0rem;
+    padding: .5rem;
+    border: 0.25rem solid #129399;
+  }
+  header .tituloPrincipal {
+    padding-bottom: 0rem;
+    color: #129399;
+    text-shadow: 1px 1px 1px #0f2e30;
+    font-size: 2rem;
+  }
+  header #tituloIndex {
+    font-size: 3rem;
+    text-shadow: 2px 2px 1px #0f2e30;
+  }
+  header nav .menuNav {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  header nav .menuNav .navItem a {
+    font-size: 1rem;
+    padding: .5rem;
+  }
+  header nav .menuNav .focusNav a {
+    color: #f2b830;
+  }
+  header nav .menuNav .navItem a:hover {
+    border-radius: .5rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  header .logo {
+    height: 6rem;
+    padding: .4rem;
+    border: 0.15rem solid #f2b830;
+  }
+  header .tituloPrincipal {
+    font-size: 1.5rem;
+  }
+  header #tituloIndex {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px #0f2e30;
+  }
+  header nav .menuNav .navItem a {
+    font-size: .8rem;
+    padding: .3rem;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  padding-top: 20px;
+  background-color: #dbfff9;
+}
+
+footer .formFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+footer .formFooter #suscripcion {
+  width: 230px;
+  height: 28px;
+  border-radius: 0px;
+  border: 1px solid #9c5513;
+  margin: 5px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+}
+
+footer .formFooter #enviarFooter {
+  width: 235px;
+  height: 28px;
+  border-radius: 10px;
+  border: 2px solid #f2b830;
+  background-color: #f2b830;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+footer .formFooter #enviarFooter:hover {
+  background-color: #129399;
+  border: 2px solid #129399;
+}
+
+footer .redes {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+footer .redes a {
+  margin: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: #f2b830;
+  font-size: 30px;
+}
+
+footer .redes a:hover {
+  color: #129399;
+}
+
+@media only screen and (max-width: 1020px) {
+  footer {
+    height: 12.5rem;
+    padding-top: 1rem;
+  }
+  footer .formFooter {
+    font-size: 1rem;
+  }
+  footer .formFooter #suscripcion {
+    width: 14rem;
+    height: 1.75rem;
+    margin: .3rem;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+  }
+  footer .formFooter #enviarFooter {
+    width: 14.2rem;
+    height: 1.75rem;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  footer .redes {
+    padding: 0;
+    margin-top: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    height: 10rem;
+    padding-top: 1rem;
+  }
+  footer .formFooter {
+    font-size: .8rem;
+  }
+  footer .formFooter #suscripcion {
+    width: 12rem;
+    height: 1.5rem;
+    margin: .3rem;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+  }
+  footer .formFooter #enviarFooter {
+    width: 12.2rem;
+    height: 1.5rem;
+    border-radius: 10px;
+    font-size: .8rem;
+  }
+  footer .redes {
+    padding: 0;
+    margin-top: 1.2rem;
+  }
+  footer .redes a {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer {
+    height: 9.2rem;
+  }
+  footer .formFooter {
+    font-size: .8rem;
+  }
+  footer .formFooter #suscripcion {
+    width: 10rem;
+    margin-bottom: .3rem;
+  }
+  footer .formFooter #enviarFooter {
+    width: 10rem;
+  }
+  footer .redes {
+    padding: 0;
+    margin-top: .8rem;
+  }
+  footer .redes a {
+    font-size: .8rem;
+  }
+}
+
+.mainIndex {
+  width: 100%;
+  height: auto;
+  border-top: 1px solid #f2b830;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.mainIndex .contMain {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainIndex .contMain .artMain {
+  width: 50%;
+}
+
+.mainIndex .contMain .artMain h2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.mainIndex .contMain .artMain .artFormato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainIndex .contMain .artMain .artFormato .imgArt {
+  height: 12.5rem;
+  margin: 0.5rem;
+  padding: 0.33333rem;
+  border: 1px solid #129399;
+}
+
+.mainIndex .contMain .artMain .artFormato .artReceta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 2rem;
+}
+
+.mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+  font-size: 1.2rem;
+}
+
+.mainIndex .contMain .artMain .textoArt {
+  margin: 1rem;
+  margin-top: 0;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+h3 {
+  font-family: 'Amaranth', sans-serif;
+  color: #9c5513;
+  text-shadow: 0.1rem 0.1rem 0.1rem #f2b830;
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+h3.prep {
+  margin-left: 10px;
+}
+
+.carousel-inner, .carousel-item {
+  height: 39rem !important;
+  width: 96% !important;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+@media only screen and (max-width: 1020px) {
+  .mainIndex .contMain {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainIndex .contMain .artMain {
+    width: 100%;
+  }
+  .mainIndex .contMain .artMain h2 {
+    margin-bottom: 1rem;
+    color: #f2b830;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .mainIndex .contMain .artMain .artFormato {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mainIndex .contMain .artMain .artFormato .imgArt {
+    height: 15rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 4rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+    font-size: 1.2rem;
+  }
+  h3 {
+    margin-left: 1rem;
+  }
+  h3.prep {
+    margin-left: 1rem;
+  }
+  .segundoArt {
+    padding-top: 2rem;
+  }
+  .carousel-inner, .carousel-item {
+    height: auto !important;
+    width: 96% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainIndex .contMain .artMain h2 {
+    font-size: 1.8rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .imgArt {
+    height: 14rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta {
+    margin-left: 2rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+    font-size: 1rem;
+  }
+  .mainIndex .contMain .artMain .textoArt {
+    font-size: 1rem;
+  }
+  h3 {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+  h3.prep {
+    margin-left: 1rem;
+  }
+  .segundoArt {
+    padding-top: .5rem;
+  }
+  .carousel-inner, .carousel-item {
+    height: auto !important;
+    width: 96% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mainIndex .contMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainIndex .contMain .artMain {
+    width: 100%;
+  }
+  .mainIndex .contMain .artMain h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  .mainIndex .contMain .artMain .artFormato {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainIndex .contMain .artMain .artFormato .imgArt {
+    height: 18rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 0.33333rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 1rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+    font-size: 1rem;
+  }
+  .mainIndex .contMain .artMain .textoArt {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h3.prep {
+    margin-left: 2rem;
+  }
+  .carousel-inner, .carousel-item {
+    height: auto !important;
+    width: 96% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .mainIndex .contMain .artMain .artFormato .imgArt {
+    height: 15rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .mainIndex .contMain .artMain .artFormato .artReceta .ingReceta {
+    font-size: .8rem;
+  }
+  .mainIndex .contMain .artMain .textoArt {
+    font-size: .8rem;
+    margin-left: 1.5rem;
+  }
+}
+
+.mainBlog {
+  width: 95%;
+  height: auto;
+  border-top: 1px solid #f2b830;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.mainBlog section h2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.mainBlog section p {
+  margin-bottom: 10px;
+}
+
+.mainBlog section p em {
+  font-weight: bolder;
+  color: #129399;
+}
+
+.mainBlog section article .avena {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainBlog section article .huevos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainBlog section article .lentejas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.imgBlog {
+  width: 25%;
+}
+
+.composicion {
+  width: 25%;
+  margin-left: 2%;
+}
+
+.beneficios {
+  width: 25%;
+  margin-left: 2%;
+}
+
+.usos {
+  width: 25%;
+  margin-left: 2%;
+}
+
+h4 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #9c5513;
+}
+
+@media only screen and (max-width: 1020px) {
+  .mainBlog {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: 1rem;
+  }
+  .mainBlog section h2 {
+    margin-bottom: .5rem;
+  }
+  .mainBlog section p {
+    margin-bottom: .5rem;
+  }
+  .imgBlog {
+    width: 28%;
+  }
+  .composicion {
+    width: 24%;
+    margin-left: 1%;
+  }
+  .beneficios {
+    width: 24%;
+    margin-left: 1%;
+  }
+  .usos {
+    width: 24%;
+    margin-left: 1%;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mainBlog {
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-size: .8rem;
+  }
+  .mainBlog section h2 {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0;
+  }
+  .mainBlog section p {
+    margin-bottom: .5rem;
+  }
+  .mainBlog section article .avena {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainBlog section article .huevos {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainBlog section article .lentejas {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .mainBlog h4 {
+    font-size: 1rem;
+  }
+  .imgBlog {
+    width: 31%;
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mainBlog {
+    font-size: .8rem;
+  }
+  .mainBlog section h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .mainBlog section article .avena {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainBlog section article .huevos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainBlog section article .lentejas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imgBlog {
+    display: inherit;
+    height: 17rem;
+    width: auto;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .composicion {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .beneficios {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+  .usos {
+    width: 100%;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .imgBlog {
+    display: inherit;
+    height: 14rem;
+    width: auto;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+}
+
+.galeria {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 2%;
+  background-color: #ffe5a9;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "foto2 foto4 foto4 foto7" "foto2 foto4 foto4 foto7" "foto1 foto1 foto3 foto6" "foto1 foto1 foto3 foto5";
+}
+
+.foto {
+  min-height: 200px;
+  min-width: 200px;
+}
+
+.foto:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-box-shadow: 5px 5px 20px 1px #000;
+          box-shadow: 5px 5px 20px 1px #000;
+}
+
+.foto1 {
+  background-image: url("../imágenes/amigos.jpeg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: foto1;
+}
+
+.foto2 {
+  background-image: url("../imágenes/baile.jpeg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: foto2;
+}
+
+.foto3 {
+  background-image: url("../imágenes/campo-de-margaritas.jpeg");
+  background-size: cover;
+  background-position: top;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: foto3;
+}
+
+.foto4 {
+  background-image: url("../imágenes/comida-sana.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: foto4;
+}
+
+.foto5 {
+  background-image: url("../imágenes/ejercicio.jpeg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: foto5;
+}
+
+.foto6 {
+  background-image: url("../imágenes/familia.jpeg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: foto6;
+}
+
+.foto7 {
+  background-image: url("../imágenes/naturaleza.jpeg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: foto7;
+}
+
+h2 {
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+  font-family: 'Amaranth', sans-serif;
+  color: #f2b830;
+  font-weight: bolder;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.mainRecetas {
+  border-top: 1px solid #f2b830;
+  width: 94%;
+  height: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 20px;
+}
+
+.primeraReceta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.fotoReceta {
+  width: 30%;
+  padding: 10px;
+  border: 3px solid #129399;
+}
+
+.fotoReceta:hover {
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.flexIngredientes {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.flexIngredientes h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.flexIngredientes ol li {
+  font-size: 20px;
+}
+
+.flexPreparacion h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.flexPreparacion p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.mainContacto {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+  border-top: 1px solid #f2b830;
+}
+
+h2 {
+  text-align: center;
+}
+
+#contacto {
+  width: 20%;
+  margin: auto;
+  text-align: center;
+  border: 2px dotted #9c5513;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1020px) {
+  #contacto {
+    width: 35%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #contacto {
+    width: 45%;
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #contacto {
+    width: 55%;
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  #contacto {
+    width: 65%;
+    font-size: .5rem;
+  }
+}
+
+.paginaError {
+  background-color: #bef7fa;
+  height: 100vh;
+  width: 100vw;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.paginaError .error {
+  height: 15rem;
+  width: 12rem;
+  text-align: center;
+  padding-top: 2rem;
+  background-image: url(../imágenes/lluvia.png);
+  background-position: center;
+  background-size: cover;
+  font-size: 5rem;
+  color: #f2b830;
+  font-weight: bolder;
+  font-family: "Amaranth", sans-serif;
+  text-shadow: 0.1rem 0.1rem 0.1rem #fff;
+}
+
+.paginaError .contenedor__error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: auto;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5rem;
+  margin-left: 10rem;
+  margin-right: 1rem;
+}
+
+.paginaError .contenedor__error .imagen__error {
+  height: 25rem;
+}
+
+.paginaError .contenedor__error .subcontenedor__error {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.paginaError .contenedor__error .subcontenedor__error .pageNotFound {
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: 'Amaranth', sans-serif;
+  color: #129399;
+  text-shadow: 0.1rem 0.1rem 0.1rem #000;
+  padding: 3rem;
+}
+
+.paginaError .contenedor__error .subcontenedor__error .explanationError {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  text-shadow: inherit;
+  text-align: center;
+  padding: 0rem;
+  padding-bottom: 3rem;
+}
+
+.paginaError .contenedor__error .subcontenedor__error .buttonError {
+  color: #fff;
+  background-color: #f2b830;
+  border: inherit;
+  border-radius: .3rem;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0.1rem 0.1rem 0.5rem #9c5513;
+          box-shadow: 0.1rem 0.1rem 0.5rem #9c5513;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,232 @@
+.mainIndex{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid $amarillo;
+    margin-bottom: $rem;
+    padding-top: $rem;
+    .contMain{
+        margin-top: $rem;
+        display: flex;
+        .artMain{
+            width: 50%;
+            h2{
+                margin-left: $rem;
+                margin-bottom: $rem*2;
+                font-family: 'Amaranth', sans-serif;
+                color: $amarillo;
+                font-weight: bolder;
+                font-size: 2rem;
+                text-align: left;
+            }
+            .artFormato{
+                display: flex;
+                .imgArt{
+                    height: 12.5rem;
+                    margin: $rem/2;
+                    padding: $rem/3;
+                    border: 1px solid $turquesa;
+                }
+                .artReceta{
+                    display: flex;
+                    flex-direction: column;
+                    margin-left: $rem*2;                
+                    .ingReceta{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .textoArt{
+                margin: $rem;
+                margin-top: 0;
+                font-size: 1.2rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
+h3{
+    font-family: 'Amaranth', sans-serif;
+    color: $marron;
+    text-shadow: .1rem .1rem .1rem $amarillo;
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: left;
+    margin-bottom: $rem;
+    margin-top: $rem;
+}
+h3.prep{
+    margin-left: 10px;
+}
+
+.carousel-inner, .carousel-item{
+    height: 39rem !important;
+    width: 96% !important;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 1020px){
+    .mainIndex{
+        .contMain{
+            display: flex;
+            flex-direction: column;
+            .artMain{
+                width: 100%;
+                h2{
+                    margin-bottom: $rem;
+                    color: $amarillo;
+                    font-weight: bolder;
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .artFormato{
+                    display: flex;
+                    justify-content: center;
+                    .imgArt{
+                        height: 15rem;
+                    }
+                    .artReceta{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: $rem*4;                
+                        .ingReceta{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    h3{
+        margin-left: $rem;
+    }
+    h3.prep{
+        margin-left: $rem;
+    }
+    .segundoArt{
+        padding-top: 2rem;
+    }
+    .carousel-inner, .carousel-item{
+        height: auto !important;
+        width: 96% !important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .mainIndex{
+        .contMain{
+            .artMain{
+                h2{
+                    font-size: 1.8rem;
+                }
+                .artFormato{
+                    .imgArt{
+                        height: 14rem;
+                    }
+                    .artReceta{
+                        margin-left: $rem*2;                
+                        .ingReceta{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .textoArt{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }    
+    h3{
+        margin-left: $rem;
+        font-size: 1.5rem;
+    }
+    h3.prep{
+        margin-left: $rem;
+    }
+    .segundoArt{
+        padding-top: .5rem;
+    }
+    .carousel-inner, .carousel-item{
+        height: auto !important;
+        width: 96% !important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 480px){
+    .mainIndex{
+        .contMain{
+            flex-direction: column;
+            .artMain{
+                width: 100%;
+                h2{
+                    margin-bottom: $rem;
+                    font-size: 1.5rem;
+                }
+                .artFormato{
+                    display: flex;
+                    flex-direction: column;
+                    .imgArt{
+                        height: 18rem;
+                        margin-left: 2rem;
+                        margin-right: 2rem;
+                        padding: $rem/3;
+                    }
+                    .artReceta{
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: $rem;                
+                        .ingReceta{
+                            font-size: $rem;
+                        }
+                    }
+                }
+                .textoArt{
+                    font-size: $rem;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    h3{
+        font-size: 1.3rem;
+    }
+    h3.prep{
+        margin-left: 2rem;
+    }
+    
+    .carousel-inner, .carousel-item{
+        height: auto !important;
+        width: 96% !important;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
+@media only screen and (max-width: 380px){
+    .mainIndex{
+        .contMain{
+            .artMain{
+                .artFormato{
+                    .imgArt{
+                        height: 15rem;
+                        margin-left: 1.5rem;
+                        margin-right: 1.5rem;
+                    }
+                    .artReceta{               
+                        .ingReceta{
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                .textoArt{
+                    font-size: .8rem;
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}
